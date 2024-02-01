@@ -1,0 +1,106 @@
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background-color: var(--neutral-black);
+  color: var(--neutral-white);
+  width: 100vw;
+}
+
+.card {
+  background-color: var(--neutral-dark-grey);
+  max-width: 384px;
+  min-width: 327px;
+
+  font-size: 14px;
+  border-radius: 12px;
+
+  /* Centering Card for challenge */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+}
+
+.card-name-location {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-location {
+  color: var(--primary-color);
+}
+
+.card-info {
+  margin-bottom: 24px;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.card-links a {
+  color: var(--neutral-white);
+  text-decoration: none;
+  background-color: var(--neutral-grey);
+  font-weight: 700;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.card-links a:last-child {
+  margin-bottom: 0;
+}
+
+.card-links a:hover,
+.card-links a:focus {
+  background-color: var(--primary-color);
+  color: var(--neutral-black);
+}
+
+.attribution {
+  display: none;
+}
